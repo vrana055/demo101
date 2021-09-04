@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement('div');
+        div.id = 'content';
+        for(let i=0; i<10; i++){
+            div.innerHTML = div.innerHTML + '<p>Count ' + i + ' </p>';
+        }
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
