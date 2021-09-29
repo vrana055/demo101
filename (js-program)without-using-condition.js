@@ -1,8 +1,3 @@
-data = {
-  deposit: {AMOUNT: -100},
-  voucher: {AMOUNT: 100},
-}
-
 /* ********** Using conditional statement 🤢 ********** */
 
 function getData(type) {
@@ -17,6 +12,11 @@ getData('deposit');
 getData('voucher');
 
 /* ********** Using Object Power 💪 ********** */
+
+data = {
+  deposit: {AMOUNT: -100},
+  voucher: {AMOUNT: 100},
+}
 
 function getDataAnotherWay(type) {
   return data[`${type}`];
